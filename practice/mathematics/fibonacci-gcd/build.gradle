@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'hackerrank-mathematics'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.5.0'
+    testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.5.0'
+    testCompile 'net.jqwik:jqwik:1.1.6'
+    testCompile 'org.assertj:assertj-core:3.9.1'
+}
